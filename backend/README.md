@@ -61,3 +61,8 @@ I used FIRST principles in order to make good written tests
 ## Environment
 
 - This environment is under prettier and eslint rule code styles
+
+## Database
+I built a small data model to ensure consistency, scalability, efficiency, and collaboration among stakeholders. It is important for creating a robust and scalable system that can efficiently manage and retrieve data.
+
+https://lucid.app/lucidchart/71240dbf-8223-46d5-afb3-aab53ed223e7/edit?viewport_loc=-304%2C43%2C2219%2C1116%2C0_0&invitationId=inv_a21ba34d-a723-448d-8ee9-a7c2c5d49c62
