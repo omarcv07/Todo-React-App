@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: todo_db
+    volumes:
+      - ./db_data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+  app:
+    build: .
+    ports:
+      - '8000:8000'
+    depends_on:
+      - db
+    environment:
+      DB_USER: postgres
+      DB_HOST: db
+      DB_DATABASE: todo_db
+      DB_PASSWORD: 123
+      DB_PORT: 5432
+      DB_DIALECT: postgres
+volumes:
+  db-data:
